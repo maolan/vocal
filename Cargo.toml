@@ -1,0 +1,16 @@
+[package]
+name = "vocal"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+burn = { version = "0.21.0", default-features = false, features = ["std", "ndarray", "wgpu"] }
+burn-store = { version = "0.21.0", default-features = false, features = ["burnpack", "std", "memmap", "pytorch"] }
+clap = { version = "4.6.5", features = ["derive"] }
+oxideav-basic = "0.0.9"
+oxideav-core = "0.1.34"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+symphonia = { version = "0.5.4", features = ["wav"] }
+wide = "1.6.0"
